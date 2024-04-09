@@ -1,0 +1,49 @@
+﻿@model SeeIndia.Models.UserModel;
+<center>
+    <h2>Login</h2>
+</center>
+<style>
+    form {
+        margin: 20px auto;
+        width: 300px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: skyblue;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        button[type="submit"]:hover {
+            background-color: #000;
+        }
+</style>
+<form method="post">
+    <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" asp-for="UserName" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" asp-for="UserPassword" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <a href="#" id="forgotPassword">Forgot Password?</a>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <li><a class="signup" asp-action="Signup" asp-controller="Home">Sign Up</a></li>
+</form>

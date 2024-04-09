@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Switzerland";
+}
+
+<!-- Views/Shared/_Layout.cshtml or any other Razor view -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Other head elements -->
+</head>
+<body>
+    <!-- Your content -->
+
+    <img src="~/images/switzerland/main.jpg" alt="g1" width="1300px" height="500px" />
+    <!-- More content -->
+
+
+    <style>
+        .product {
+            justify-content: center;
+            margin-left: 15px;
+        }
+
+        .product-list {
+            margin-left: 50px;
+            display: flex;
+        }
+
+        .l {
+            margin-left: 10px;
+            height: 15px;
+            width: 15px;
+        }
+
+        /* Style for each diamond item */
+        .gold-item {
+            list-style-type: none;
+            margin: 12px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            text-align: center;
+        }
+
+            /* Style for the diamond image */
+            .gold-item img {
+                max-width: 200px; /* Adjust as needed */
+                height: auto;
+                align-items: center;
+            }
+
+        /* Style for the like button */
+
+
+
+        /* Style for the add to cart button */
+        .add-to-cart {
+            display: block;
+            margin-top: 10px;
+            background-color: skyblue; /* Example color */
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 15px; /* Adjust the value as needed for the desired roundness */
+        }
+
+
+            /* Hover effect for add to cart button */
+            .add-to-cart:hover {
+                background-color: #020911; /* Darker shade of the button color */
+            }
+
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+            .image-grid img {
+                width: 100%;
+                height: auto;
+            }
+    </style>
+    <div class="product">
+        <div>
+            <ul class="product-list">
+                <li class="gold-item">
+                    <a class="gold-Packages" href="#">
+                        <img src="~/images/switzerland/geneva.webp" alt="geneva">
+                    </a>
+                    <h6>Geneva</h6>
+                    <div class="price">Rs. 30,000</div>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </li>
+
+                <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="~/images/switzerland/interlaken.jpg" alt="interlaken">
+                    </a>
+                    <h6>Interlaken</h6>
+                    <div class="price">Rs. 30,000</div>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </li>
+
+                <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="~/images/switzerland/luzern.jpg" alt="luzern">
+                    </a>
+                    <h6>Luzern</h6>
+                    <div class="price">Rs. 30,000</div>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </li>
+
+                <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="~/images/switzerland/zurich-switzerland.webp" alt="zurich">
+                    </a>
+                    <h6>Zurich</h6>
+                    <div class="price">Rs. 30,000</div>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
+
